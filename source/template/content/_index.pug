@@ -1,0 +1,165 @@
+mixin popup
+    .services-popup
+        button(type="button").services-popup__close
+        h2.services-popup__title
+            |Беспроводная клавиатура
+        img.services-popup__image(src="" alt="Беспроводная клавиатура")
+        p.services-popup__description
+            |Компактне устройство для постановки и снятия
+            |обьекта с охраны путем ввода персонального кода.
+
+
+mixin tab
+    li.services__tab
+        label.services__label
+            span.services__title
+                |Моя квартира
+            span.services__address
+                |г. Москва, ул. Рашпилевская, д. 203, корп. 12, кв. 122
+
+        .services__content
+            .services__header
+                span.services__desc
+                    |Охрана объекта — 9500 руб./мес.
+                span.services__details
+                    |С учетом дополнительных услуг и оборудования
+
+            form.services-extra(action="#" method="POST")
+
+                table.services-table
+                    caption.services-table__title
+                        |Подключение дополнительных услуг
+
+                    thead.services-table__thead
+                        tr.services-table__tr
+                            th.services-table__th
+                                |Услуги по обьекту
+                            th.services-table__th
+                                |Стоимость установки, руб.
+                            th.services-table__th
+                                |Абон.плата, руб.
+                            th.services-table__th
+                                |Выбор
+                            th.services-table__th
+                                |Количество
+
+                    tbody.services-table__tbody
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |СМС-информирование
+                            td.services-table__td
+                                |0
+                            td.services-table__td
+                                |60
+                            td.services-table__td
+                                input(type="checkbox" name="sms-info")
+                            td.services-table__td
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |Оповещение о протечке воды
+                            td.services-table__td
+                                |2300
+                            td.services-table__td
+                                |50
+                            td.services-table__td
+                                input(type="checkbox" name="leakage-notify")
+                            td.services-table__td
+                                .services-quantity
+                                    span.services-quantity__minus
+                                    input.services-quantity__input(name="leakage-notify-count" value="2")
+                                    span.services-quantity__plus
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |Оповещение о возгорании
+                            td.services-table__td
+                                |13
+                            td.services-table__td
+                                |50
+                            td.services-table__td
+                                input(type="checkbox" name="ignition-notify")
+                            td.services-table__td
+                                .services-quantity
+                                    span.services-quantity__minus
+                                    input.services-quantity__input(name="ignition-notify-count" value="2")
+                                    span.services-quantity__plus
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |Сервисное обслуживание
+                                +popup
+                            td.services-table__td
+                                |2300
+                            td.services-table__td
+                                |50
+                            td.services-table__td
+                                input(type="checkbox" name="service")
+                            td.services-table__td
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |Двойное реагирование
+                            td.services-table__td
+                                |2300
+                            td.services-table__td
+                                |50
+                            td.services-table__td
+                                input(type="checkbox" name="dual-response")
+                            td.services-table__td
+                        tr.services-table__tr
+                            td.services-table__td.services-table__name
+                                i.services-table__icon
+                                |Оповещение об открытии ворот
+                            td.services-table__td
+                                |2300
+                            td.services-table__td
+                                |50
+                            td.services-table__td
+                                input(type="checkbox" name="goal-notify")
+                            td.services-table__td
+                                .services-quantity
+                                    span.services-quantity__minus
+                                    input.services-quantity__input(name="goal-notify-count" value="2")
+                                    span.services-quantity__plus
+
+                    tfoot.services-table__footer
+                        tr.services-table__tr
+                            td.services-table__td
+                                |Итого
+                            td.services-table__td
+                                |0
+                            td.services-table__td
+                                |1000
+                            td.services-table__td(colspan="2")
+                                button.services-table__button
+                                    |Подключить
+
+            .services__footer
+                a.services__stop(href="#")
+                    |Временно приостановить обслуживание обьекта
+
+.container
+    include ../modules/_breadcrumbs.pug
+
+    section.services
+        h1.services__header
+            |Услуги
+
+        ul.services-tabs
+            +tab
+
+        .services-total
+            p.services-total__text
+                |Абонентская плата по всем обьектам
+            span.services-total__price
+                |5000
+            span.services-total__period
+                |руб. / мес.
+        
+
+
+                                            
+
+

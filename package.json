@@ -1,11 +1,8 @@
 {
-  "name": "chat",
+  "name": "Delta",
   "version": "1.0.0",
   "author": "d.rybkin",
   "license": "ISC",
-  "scripts": {
-    "postinstall": "bower install"
-  },
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
@@ -22,11 +19,8 @@
     "gulp-notify": "*",
     "gulp-pug": "*",
     "gulp-replace": "*",
-    "gulp-sass": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-svg-sprite": "*",
-    "gulp-svgmin": "*",
-    "gulp.spritesmith": "*"
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "*"
   },
   "dependencies": {
     "normalize.css": "*"

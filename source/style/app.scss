@@ -1,4 +1,6 @@
-@import 'libraries/fonts';
-@import 'libraries/mixin';
-@import 'libraries/reset';
+@import 'libraries/normalize';
 
+@import 'skin/_default';
+@import 'modules/_header';
+@import 'modules/_content';
+@import 'modules/_footer';

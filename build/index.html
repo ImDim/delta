@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Услуги</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="icon" href="assets/img/logo.png">
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container"><a class="header__logo" href="#"></a>
+        <div class="header__inner">
+          <div class="header-user">
+            <div class="header-user__info"><span class="header-user__name">Суходольский Константин Константинович</span><a href="#">
+                 Выйти</a></div>
+            <div class="header-balance">Баланс<span class="header-balance__remainder">1000 руб.</span><a href="#">Пополнить</a></div>
+            <div class="header-contract">Договор:<span class="header-contract__number">99858-23-42</span><a href="#">Другой</a></div>
+          </div>
+          <div class="header-contacts"><a class="header-contacts__phone" href="tel:4957883558">(495) 788-35-58</a>горячая линия</div>
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Главная</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Управление</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Услуги</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Платежи</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Личные данные</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs_link" href="#">Личный кабинет</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs_link" href="#">Услуги</a></li>
+      </ul>
+      <section class="services">
+        <h1 class="services__header">Услуги</h1>
+        <ul class="services-tabs">
+              <li class="services__tab">
+                <label class="services__label"><span class="services__title">Моя квартира</span><span class="services__address">г. Москва, ул. Рашпилевская, д. 203, корп. 12, кв. 122</span></label>
+                <div class="services__content">
+                  <div class="services__header"><span class="services__desc">Охрана объекта — 9500 руб./мес.</span><span class="services__details">С учетом дополнительных услуг и оборудования</span></div>
+                  <form class="services-extra" action="#" method="POST">
+                    <table class="services-table">
+                      <caption class="services-table__title">Подключение дополнительных услуг</caption>
+                      <thead class="services-table__thead">
+                        <tr class="services-table__tr">
+                          <th class="services-table__th">Услуги по обьекту</th>
+                          <th class="services-table__th">Стоимость установки, руб.</th>
+                          <th class="services-table__th">Абон.плата, руб.</th>
+                          <th class="services-table__th">Выбор</th>
+                          <th class="services-table__th">Количество</th>
+                        </tr>
+                      </thead>
+                      <tbody class="services-table__tbody">
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>СМС-информирование</td>
+                          <td class="services-table__td">0</td>
+                          <td class="services-table__td">60</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="sms-info">
+                          </td>
+                          <td class="services-table__td"></td>
+                        </tr>
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>Оповещение о протечке воды</td>
+                          <td class="services-table__td">2300</td>
+                          <td class="services-table__td">50</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="leakage-notify">
+                          </td>
+                          <td class="services-table__td">
+                            <div class="services-quantity"><span class="services-quantity__minus"></span>
+                              <input class="services-quantity__input" name="leakage-notify-count" value="2"><span class="services-quantity__plus"></span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>Оповещение о возгорании</td>
+                          <td class="services-table__td">13</td>
+                          <td class="services-table__td">50</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="ignition-notify">
+                          </td>
+                          <td class="services-table__td">
+                            <div class="services-quantity"><span class="services-quantity__minus"></span>
+                              <input class="services-quantity__input" name="ignition-notify-count" value="2"><span class="services-quantity__plus"></span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>Сервисное обслуживание
+                                <div class="services-popup">
+                                  <button class="services-popup__close" type="button"></button>
+                                  <h2 class="services-popup__title">Беспроводная клавиатура</h2><img class="services-popup__image" src="" alt="Беспроводная клавиатура">
+                                  <p class="services-popup__description">
+                                    Компактне устройство для постановки и снятия
+                                    обьекта с охраны путем ввода персонального кода.
+                                  </p>
+                                </div>
+                          </td>
+                          <td class="services-table__td">2300</td>
+                          <td class="services-table__td">50</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="service">
+                          </td>
+                          <td class="services-table__td"></td>
+                        </tr>
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>Двойное реагирование</td>
+                          <td class="services-table__td">2300</td>
+                          <td class="services-table__td">50</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="dual-response">
+                          </td>
+                          <td class="services-table__td"></td>
+                        </tr>
+                        <tr class="services-table__tr">
+                          <td class="services-table__td services-table__name"><i class="services-table__icon"></i>Оповещение об открытии ворот</td>
+                          <td class="services-table__td">2300</td>
+                          <td class="services-table__td">50</td>
+                          <td class="services-table__td">
+                            <input type="checkbox" name="goal-notify">
+                          </td>
+                          <td class="services-table__td">
+                            <div class="services-quantity"><span class="services-quantity__minus"></span>
+                              <input class="services-quantity__input" name="goal-notify-count" value="2"><span class="services-quantity__plus"></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot class="services-table__footer">
+                        <tr class="services-table__tr">
+                          <td class="services-table__td">Итого</td>
+                          <td class="services-table__td">0</td>
+                          <td class="services-table__td">1000</td>
+                          <td class="services-table__td" colspan="2">
+                            <button class="services-table__button">Подключить</button>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </form>
+                  <div class="services__footer"><a class="services__stop" href="#">Временно приостановить обслуживание обьекта</a></div>
+                </div>
+              </li>
+        </ul>
+        <div class="services-total">
+          <p class="services-total__text">Абонентская плата по всем обьектам</p><span class="services-total__price">5000</span><span class="services-total__period">руб. / мес.</span>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul class="footer-menu">
+        <li class="footer-menu__item"><a class="footer-menu__link">Главная</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link">Управление</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link">Услуги</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link">Платежи</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link">Личные данные</a></li>
+        <li class="footer-menu__item footer-menu__item_logout"><a class="footer-menu__link">Выйти</a></li>
+      </ul>
+      <p class="footer-menu__info">2009—2012 Дельта ООО «Охранные системы»<br>Сделано в <a href="#">DDVB</a></p>
+    </footer>
+    <!--For browser-sync-->
+    <script type="text/javascript" id="__bs_script__">
+      //<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=3.10.10'><\/script>".replace("HOST", location.hostname));
+      //]]>
+    </script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
