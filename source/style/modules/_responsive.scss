@@ -10,7 +10,11 @@
 
         &-menu {
             &__list {
-                @include flex(space-around, flex-start, wrap);
+                @include flex(center, flex-start, wrap);
+            }
+            &__item {
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
     }

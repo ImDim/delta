@@ -854,13 +854,17 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .header-menu__item {
+    margin-left: 10px;
+    margin-right: 10px; }
   .services-total {
     width: 100%; }
   .services-tabs {
