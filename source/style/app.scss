@@ -1,6 +1,27 @@
 @import 'libraries/normalize';
+@import '_mixins';
 
-@import 'skin/_default';
+html {
+    background: #FFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    color: #3f3e3e;
+}
+
+a {
+    color: #0098e3;
+}
+
+.container {
+    max-width: 990px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto
+}
+
 @import 'modules/_header';
+@import 'modules/_breadcrumbs';
 @import 'modules/_content';
 @import 'modules/_footer';
+@import 'modules/_responsive';
+

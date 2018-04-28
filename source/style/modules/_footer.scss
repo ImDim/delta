@@ -1,0 +1,39 @@
+.footer {
+    margin-top: 163px;
+    margin-bottom: 60px;
+    &-menu {
+        @include flex(flex-start, flex-start, wrap);
+        @include list-unstyled;
+
+        &__item {
+            margin-right: 18px;
+            text-transform: uppercase;
+            &_logout {
+                flex-grow: 1;
+                text-align: right;
+                margin-right: 0;
+            }
+        }
+        &__link {
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: underline;
+            &_logout {
+                text-decoration: none;
+                border-bottom: 1px dashed #0098e3;
+            }
+        }
+    }
+    &__info {
+        margin-top: 35px;
+        margin-bottom: 0px;
+        color: #222222;
+        font-size: 12px;
+    }
+    &__developer {
+        margin-top: 7px;
+        a {
+            color: #222222;
+        }
+    }
+}

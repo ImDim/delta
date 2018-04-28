@@ -1,0 +1,12 @@
+@mixin flex($jusctifyContent, $alignItems, $flexWrap: nowrap) {
+    display: flex;
+    justify-content: $jusctifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap
+}
+
+@mixin list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

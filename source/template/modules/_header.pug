@@ -1,26 +1,29 @@
 header.header
-    .container
+    .header__container.container
         a.header__logo(href="#")
         .header__inner
             .header-user
                 .header-user__info
                     span.header-user__name
                         |Суходольский Константин Константинович
-                    a(href="#") 
+                    a.header-user__logout(href="#")
                         |Выйти
+                    
+                    .header-contract
+                        |Договор: 
+                        span.header-contract__number
+                            |99858-23-42
+                        a.header-contract__choice(href="#")
+                            |Другой
 
                 .header-balance
-                    |Баланс
-                    span.header-balance__remainder
-                        |1000 руб.
-                    a(href="#")
+                    |Баланс 
+                    span.header-balance__remainder.header-balance__remainder_negative
+                        |-1000 руб.
+                    a.header-balance__replenish(href="#")
                         |Пополнить
-                .header-contract
-                    |Договор:
-                    span.header-contract__number
-                        |99858-23-42
-                    a(href="#")
-                        |Другой
+                    .header-balance__blocked
+                        |Услуга приостановлена
 
             .header-contacts
                 a.header-contacts__phone(href="tel:4957883558")
